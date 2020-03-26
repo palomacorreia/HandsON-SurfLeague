@@ -1,23 +1,23 @@
 #World Surf League Web(Laravel 5, Angular 2,PHP7) 
 
-> Full implementation of Hero Detail Tutorial wit API and Database
+
 
 ##### O Projeto Contém :
-- Restfull Ajax / JSON Api
+-  JSON Api
 - Implementação de Banco para armazenamento de Surfistas.
 - Full Hero CRUD
  
-> This is only meant as a good starting point for ***Laravel / Angular 2*** Development
+> ***Laravel / Angular 2*** Development
 
 ### Ambiente de Desenvolvimento
 
-1) Create root project
-````sh
+1) Criação do Projeto
+````
 $ composer install
 $ npm install
 ````
-2) Create and adapt environment file
-````sh 
+2) Crie e adapte o arquivo .env com base no exemplo
+````
 $ cd .env.example .env
 ````
 3) Crie seu esquema de banco de dados
