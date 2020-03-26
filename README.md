@@ -1,11 +1,11 @@
-#World Surf League Web(Laravel 5, Angular 2,PHP7) 
+# World Surf League Web(Laravel 5, Angular 2,PHP7) 
 
 
 
 ##### O Projeto Contém :
 -  JSON Api
-- Implementação de Banco para armazenamento de Surfistas.
-- Full Hero CRUD
+- Implementação de Banco[mysql] para armazenamento de Surfistas.
+
  
 > ***Laravel / Angular 2*** Development
 
@@ -32,7 +32,7 @@ $ php artisan migrate --seed
 ````
 $ gulp build-typescript && gulp watch-typescript
 ````
-6) Em outra janela de Terminal Execute o sgeuinte comando para dar início ao servidor
+6) Em outra janela de Terminal Execute o seguinte comando para dar início ao servidor
 ````
 $ php artisan serve
 ````
