@@ -1,0 +1,23 @@
+<h2>Surfistas</h2>
+<button (click)="addSurfista()">Adicionar Novo Surfista</button>
+<div *ngIf="addingSurfista">
+    <my-surf-detail (close)="close($event)"></my-surf-detail>
+</div>
+<ul class="heroes">
+    <li *ngFor="let surf of surfistas" (click)="onSelect(surf)" [class.selected]="surf === selectedSurfista">
+    <span class="hero-element">
+      <span class="badge">{{surf.numero}}</span> <span>{{surf.nome}}</span>
+    </span>
+        <span class="badge">{{surf.pais}}</span>
+
+<!--        <button class="delete-button" (click)="delete(surf, $event)">Delete</button>-->
+    </li>
+</ul>
+
+
+<div *ngIf="selectedSurfista">
+    <h2>
+        {{selectedSurfista.nome | uppercase}}
+    </h2>
+<!--    <button (click)="gotoDetail()">Ver Detalhes</button>-->
+</div>

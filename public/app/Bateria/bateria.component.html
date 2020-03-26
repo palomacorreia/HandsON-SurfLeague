@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h3>Criar Nova Bateria</h3>
+    <p>Selecione os competidores:</p>
+    <label>Surfista 1</label>
+
+    <select >
+        <option *ngFor="let surf of surfistas">{{surf.numero}}|{{surf.nome}}  </option>
+    </select>
+    <!--[value]="baterias.Surfista1"-->
+    <p>X</p>
+    <label>Surfista 2</label>
+    <select >
+        <option *ngFor="let surf of surfistas" >{{surf.numero}}|{{surf.nome}} </option>
+    </select>
+</div>
+<br>
+<div >
+<button (click)="save()">Salvar</button>
+</div>
+</body>
+</html>
+<!--*ngFor="let bat of baterias"-->

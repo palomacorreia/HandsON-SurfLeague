@@ -1,0 +1,8 @@
+<h3>Top Surf </h3>
+<div class="grid grid-pad">
+    <div *ngFor="let surf of surfistas" (click)="gotoDetail(surf)" class="col-1-4">
+        <div class="module hero">
+            <h4>{{surf.nome}}</h4>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div *ngIf="surfistas">
+    <h2>{{surfistas.nome}} </h2>
+    <div>
+       <label>numero: </label>{{surfista?.numero}}
+    </div>
+    <div>
+        <label>Nome: </label>
+        <input [(ngModel)]="surfistas.nome"  />
+        <label>País: </label>
+        <input [(ngModel)]="surfistas.pais" />
+    </div>
+    <button (click)="goBack()">Voltar</button>
+    <button (click)="save()">Save</button>
+</div>
